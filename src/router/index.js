@@ -23,7 +23,7 @@ import UserInfo from '../components/board/userManagement/UserInfo'
 import ProceStatus from '../components/board/statistics/ProceStatus'
 import HourlyStatistics from '../components/board/statistics/HourlyStatistics'
 import RegionalStatistics from '../components/board/statistics/RegionalStatistics'
-
+import FailureReportStatistics from '../components/board/statistics/FailureReportStatistics'
 import ReportSetting from '../components/board/statistics/ReportSetting'
 
 // 로그 -> 이벤트 로그, 시스템 로그
@@ -110,6 +110,11 @@ export default new Router({
       path: '/regionalstatistics',
       name: RegionalStatistics,
       component: RegionalStatistics
+    },
+    {
+      path: '/FailureReportStatistics',
+      name: FailureReportStatistics,
+      component: FailureReportStatistics 
     },
 
     { // 5-5 고장 리포트 설정
